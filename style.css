@@ -129,19 +129,22 @@ button.active {
 
 /* Mobile Warning Overlay */
 #mobile-warning {
+    /* Improved Mobile Overlay */
     display: none;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: #050505;
-    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at center, #1a0b14 0%, #000000 100%);
+    z-index: 99999; /* Super high z-index */
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 .warning-content h1 {
