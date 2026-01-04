@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magical HAND Particles</title>
+</head>
+
+<body>
+  <div id="mobile-warning">
+    <div class="warning-content">
+      <h1>Desktop Experience Only</h1>
+      <p>This magical experience requires a larger screen and a webcam.</p>
+      <p>Please open on a laptop or desktop computer. ✨</p>
+    </div>
+  </div>
+  <div id="ui-container">
+    <div id="status">Wait for camera...</div>
+    <div class="controls">
+      <button data-shape="sphere">Sphere</button>
+      <button data-shape="cube">Cube</button>
+      <button data-shape="heart">Heart</button>
+      <button data-shape="flower">Flower</button>
+      <button data-shape="saturn">Saturn</button>
+      <button data-shape="fireworks">Fireworks</button>
+    </div>
+    <div class="slider-container"
+      style="background:rgba(0,0,0,0.5); padding:10px; border-radius:6px; margin-top:5px; backdrop-filter:blur(4px);">
+      <label for="particleCount" style="color:white; font-size:0.9rem; margin-right:10px;">Particles: <span
+          id="countValue">20000</span></label>
+      <input type="range" id="particleCount" min="10000" max="100000" step="5000" value="20000"
+        style="vertical-align:middle;">
+    </div>
+    <div class="instructions">
+      <p>👆 Point with Index Finger to Move</p>
+      <p>🤏 Pinch (Index+Thumb) to Attract</p>
+      <p>✋ Open Palm to Switch Shape (Debounced)</p>
+    </div>
+  </div>
+  <div id="app"></div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
